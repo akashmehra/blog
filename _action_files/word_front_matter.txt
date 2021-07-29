@@ -1,4 +1,3 @@
 ---
 layout: post
-image: images/brain-logo.png
 ---
