@@ -161,9 +161,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
-\begin{split}
-E[X] &amp; = \mu\\
-\end{split}
+E[X] = \mu
 $$
 </div>
 </div>
@@ -172,11 +170,7 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
-\begin{split}
-Var(X) &amp; = E[(X - \mu)^2]\\
-&amp;= E[X^2] + \mu^2 - 2\mu E[X] \\
-&amp;= E[X^2] - E[X]^2
-\end{split}
+Var(X) = E[(X - \mu)^2] = E[X^2] + \mu^2 - 2\mu E[X] \implies E[X^2] - E[X]^2
 $$
 </div>
 </div>
@@ -193,12 +187,25 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
-\begin{split}
-Var(X-Y) &amp;= Var(X) + Var(Y) - 2Cov(X,Y)\\
-Var(\mu) &amp;= 0\\
-Cov(X,\mu) &amp;= E[X-E[X]]E[\mu-E[\mu]] = 0\\
-Var(X-\mu) &amp;= Var(X)
-\end{split}
+Var(X-Y) = Var(X) + Var(Y) - 2Cov(X,Y)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+Var(\mu) = 0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+Cov(X,\mu) = E[X-E[X]]E[\mu-E[\mu]] = 0 \implies Var(X-\mu) = Var(X)
 $$
 </div>
 </div>
@@ -215,11 +222,16 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
-\begin{split}
-MSE(\hat{\theta}) &amp;= E[(\hat{\theta} - \theta)^2] \\
-&amp;= Var(\hat{\theta} - \theta) + E[\hat{\theta} - \theta]^2\\
-&amp;= Var[\hat{\theta}] + Bias^2[\hat{\theta}]
-\end{split}
+MSE(\hat{\theta}) = E[(\hat{\theta} - \theta)^2] \implies Var(\hat{\theta} - \theta) + E[\hat{\theta} - \theta]^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+MSE(\hat{\theta}) =  Var[\hat{\theta}] + Bias^2[\hat{\theta}]
 $$
 </div>
 </div>
